@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <form action="">
+        <div class="flex justify-center items-center h-screen m-12">
+            <div class="w-[478px] border rounded-2xl p-12">
+                <h1 class="text-3xl font-semibold my-3 ml-2">Sign up</h1>
+                <div class="mt-11">
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="email" class="font-medium" >Email</label>
+                        <p>Already have an account? <a href="#" class="text-green-600 font-medium">Log in</a></p>
+                    </div>
+                    <input type="email" name="email" class="w-full py-2 px-2 border focus:outline-none rounded-md
+                    focus:border leading-10 ">
+                </div>
+
+                <div class="mt-11 mb-5">
+                    <div class="flex justify-between items-center mb-2 font-medium">
+                        <label for="password">password</label>
+                        <p id="show" onclick="showPassword()">Show</p>
+                    </div>
+                    <input type="password" name="password" value="" id="pwd" class="w-full leading-10 py-2 px-2 border focus:outline-none rounded-md
+                    focus:border ">
+                </div>
+                <div class="m-3 w-full">
+                    <ul class="list-disc flex flex-wrap justify-between">
+                        <li class="m-1">One lowercase character</li>
+                        <li class="m-1">One special character</li>
+                        <li class="m-1">One uppercase character</li>
+                        <li class="m-1">8 characters minimum</li>
+                        <li class="m-1">One number</li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <span>&nbsp;Email me with news and updates</span>
+                </div>
+                <div class="mt-6 mb-4">
+                    <button class="bg-green-600 w-full h-12 rounded-full text-white text-center font-semibold text-lg">Sign up for free</button>
+                </div>
+                <div>
+                    <p class="text-xs">By clicking the "Sign up for free" button, you are creating an account, and agree to W3Schools' <a href="#" class="font-bold">Terms of Service</a> and <a href="#" class="font-bold">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
